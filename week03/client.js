@@ -206,7 +206,6 @@ void async function () {
             name: 'winter'
         }
     })
-    console.log(1);
     let response = await request.send()
-    parser.parserHtml(response.body)
+    parser.parseHTML(response.body)
 }()
