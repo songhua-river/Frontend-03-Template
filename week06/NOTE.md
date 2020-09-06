@@ -180,7 +180,7 @@
   - 视觉上会有偏差，自然界很少有纯色光
   - 三原色：RGB
   - 印刷行业 CMYK 最大化使用 k
-  - HSL and HSV：更加符合人的认知， 虽然我不怎么认为
+  - HSL and HSV
     - H：Hue 色相 把六种基本颜色拼成一个色盘，Hue 指定角度
     - S：Saturation 纯度， 表示颜色中杂色的数量
     - L：Lightness 光度，
