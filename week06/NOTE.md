@@ -1,30 +1,9 @@
-学习笔记
-
-# Week 6
-
-```
-HTML代码中可以书写开始_标签_，结束_标签_ ，和自封闭_标签_ 。
-
-一对起止_标签_ ，表示一个_元素_ 。
-
-DOM树中存储的是_元素_和其它类型的节点（Node）。
-
-CSS选择器选中的是_元素_ 。
-
-CSS选择器选中的_元素/伪元素_ ，在排版时可能产生多个_盒_ 。
-
-排版和渲染的基本单位是_盒_ 。
-```
-
-NOTE：元素是 NODE 的一种 SO: NODE<>- Element
-
 ## 盒 BOX
 
 排版最基本的单位是盒
 
 - 盒模型
   排版时使用的基本单位
-  <img src="./note-static/box-model.png">
 
   - padding: 盒内排版， 影响 content 可以排布的区域的大小
   - margin: 盒本身排版， 确定了盒子周围至少存在的空白区域大小
@@ -53,7 +32,6 @@ NOTE：元素是 NODE 的一种 SO: NODE<>- Element
       3. 计算行的排布
 
       - 感性图：
-        <img src='./note-static/box-queue.png' />
         note: 文字/盒对齐规则。
       - 盒类型
         -line-box：
@@ -97,39 +75,7 @@ NOTE：元素是 NODE 的一种 SO: NODE<>- Element
                 可以在 float 元素的 style 加一个属性 clear 来强制换行 -> clear:right（找到右边的干净空间来执行浮动）
 
             - 感性图:
-
-              <img src='./note-static/float.png' />
-
-            - 古老 float 排版：
-
-            ```
-            <head>
-              <style>
-                .left {
-                  margin:10px;
-                  float:left;
-                  width:100px;
-                  height:100px;
-                  backgroud-color:blue;
-                }
-                .break{
-                  clear: left;
-                }
-              </style>
-            </head>
-            <body>
-              <div class='left'>1</div>
-              <div class='left'>2</div>
-              <div class='left'>3</div>
-              <div class='left'>4</div>
-              <div class='left break'>5</div>
-              <div class='left'>6</div>
-              <div class='left'>7</div>
-              <div class='left'>8</div>
-              <div class='left'>9</div>
-            </body>
-            ```
-
+            
           - margin 堆叠 margin collapse
 
             - 一个 bfc 内有从上到下排列的元素， 两个上下的元素的 margin 重叠的部分取最大，
@@ -234,7 +180,7 @@ NOTE：元素是 NODE 的一种 SO: NODE<>- Element
   - 视觉上会有偏差，自然界很少有纯色光
   - 三原色：RGB
   - 印刷行业 CMYK 最大化使用 k
-  - HSL and HSV：更加符合人的认知， 虽然我不怎么认为
+  - HSL and HSV
     - H：Hue 色相 把六种基本颜色拼成一个色盘，Hue 指定角度
     - S：Saturation 纯度， 表示颜色中杂色的数量
     - L：Lightness 光度，
